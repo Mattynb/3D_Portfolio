@@ -24,6 +24,13 @@ import {
     tripguide,
     threejs,
     mgh,
+    jupyter,
+    opencv,
+    python,
+    tensorflow,
+    umb,
+    pac,
+    flask,
   } from "../assets";
   
   export const navLinks = [
@@ -61,6 +68,39 @@ import {
   ];
   
   const technologies = [
+
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Tensorflow",
+      icon: tensorflow,
+    },
+    {
+      name: "OpenCV",
+      icon: opencv,
+    },
+    {
+      name: "Flask",
+      icon: flask,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -70,49 +110,18 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Jupyter",
+      icon: jupyter,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+
   ];
   
   const experiences = [
@@ -120,7 +129,8 @@ import {
       title: "Research Assistant - Computer Engineering",
       company_name: "Harvard Medical School and Massachusetts General Hospital",
       icon: mgh,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
+      url: "https://www.nmr.mgh.harvard.edu/Neural_Systems_Group/index.html",
       date: "April 2021 - April 2022",
       points: [
         "Assisted Prof. Quan and P.h.D graduate G. Zhu in their research of unobtrusive continuous blood pressure monitoring devices.",
@@ -134,23 +144,25 @@ import {
     {
       title: "Research Assistant - Computer Vision",
       company_name: "The Nano-Bio Interfaces Lab at Umass Boston",
-      icon: tesla,
+      icon: umb,
       iconBg: "#E6DEDD",
+      url:"https://blogs.umb.edu/kimhamad/", 
       date: "September 2023 - December 2023",
       points: [
         "Assisted Prof. Hamad and Ph.D. candidate Josselyn Mata in her research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19 (Ampli).",
         "Developed OOP program to identify Ampli system and analyze it, predicting strand of virus in sample (Computer Vision).",
         "Constructed Ampli blocks using 3D modeling and laser cutting (TinkerCad, Fusion360, Inkscape, PrusaSlicer).",
-        "Completed a 6-week long leadership academy focused on preparing students for professional success. ",
-        "Presented about my progress on multiple occasions during lab meetings and the CS department.",
+        "Completed a 6-week long summer leadership academy focused on preparing students for professional success. ",
+        "Presented about my progress on multiple occasions during lab meetings and to the CS department.",
       ],
     },
     {
       title: "Wix Developer",
       company_name: "Plan Ahead Constructions",
-      icon: tesla,
-      iconBg: "#E6DEDD",
+      icon: pac,
+      iconBg: "#0e3b77",
       date: "December 2023",
+      url: "https://www.planaheadconstructions.com/",
       points: [
         "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement.",
         "My focus on SEO strategies led to a 1,967% increase in traffic.",

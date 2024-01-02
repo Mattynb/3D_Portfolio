@@ -1,11 +1,10 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {
   Decal, Float, OrbitControls, Preload, useTexture
 } from '@react-three/drei'
 import CanvasLoader from '../Loader';
-
-
+import { tripguide } from '../../assets';
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -32,18 +31,27 @@ const Ball = (props) => {
   )
 }
 
-const BallCanvas = ({ icon }) => {
-  return (
-    <Canvas
-      frameLoop = 'demand'
-      gl = {{ preserveDrawingBuffer: true }}> 
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false}/>
-        <Ball imgUrl={icon} />
-      </Suspense>
+const BallCanvas = ({ icon, name }) => {
+  const [toggle, setToggle] = useState(false);
 
-      <Preload all/>
-    </Canvas>
+  return (
+    <div className='w-full h-full transition duration-500 ease-in-out' onMouseEnter={() => setToggle(true)} onMouseLeave={() => setToggle(false)}>
+      <Canvas
+        frameLoop = 'demand'
+        gl = {{ preserveDrawingBuffer: true }}> 
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls enableZoom={false}/>
+          <Ball imgUrl={icon} />
+        </Suspense>
+
+        <Preload all/>
+      </Canvas>
+      {toggle ? 
+        <p className='transition duration-350 ease-in-out text-white text-[14px] font-semibold text-center mt-3 '>
+          {name}
+        </p> :<p/> }
+    </div>
+    
   )
 }
 export default BallCanvas
