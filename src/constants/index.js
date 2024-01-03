@@ -31,6 +31,8 @@ import {
     umb,
     pac,
     flask,
+    pac_site,
+    plant_site,
   } from "../assets";
   
   export const navLinks = [
@@ -200,47 +202,49 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Plan Ahead Constructions", 
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement. My focus on SEO strategies led to a 1,967% increase in traffic. My ongoing responsibilities include website maintenance, monitoring analytics, and implementing user feedback for continuous improvement.",
       tags: [
         {
-          name: "react",
-          icon: reactjs,
+          name: "Wix Website Builder",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "User Interface Design",
           icon: mongodb,
-          color: "green-text-gradient",
+          color: "gray-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Search Engine Optimization (SEO)",
           icon: tailwind,
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: pac_site,
+      source_code_link: "https://github.com/Mattynb",
+      live_code_link: "https://planaheadconstructions.com/",
     },
     {
-      name: "Job IT",
+      name: "Plant Recognition",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "react",
-          icon: reactjs,
-          color: "blue-text-gradient",
+          name: "Flask",
+          color: "black-text-gradient",
         },
         {
-          name: "restapi",
-          icon: nodejs,
-          color: "green-text-gradient",
+          name: "Tensorflow",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Jupyter",
+          color: "#[161616]-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: plant_site,
+      source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
     },
   ];
   
