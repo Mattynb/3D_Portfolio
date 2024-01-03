@@ -6,6 +6,7 @@ import { SectionWrapper } from '../hoc';
 import {projects } from '../constants';
 import {fadeIn, textVariant} from '../utils/motion';
 import { BallCanvas } from './canvas';
+import { toHalfFloat } from 'three/src/extras/DataUtils';
 
 
 const ProjectCard = ( {index, name, description, tags, image, source_code_link}) => {
@@ -44,19 +45,12 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link})
         <div className='mt-4 flex flex-wrap gap-2'>
          
           {tags.map((tag) => (
-            <>
             <p 
               key={tag.name}
               className={`text-[14px] ${tag.color}`}
             >
               {tag.name}
             </p>
-            <div className='mt-4 gap-2 flex flex-row justify-center'>
-              <div  key={tag.name}>
-                <BallCanvas name='' icon=''/>
-              </div>    
-            </div>
-           </>
           ))}
         </div>
       </Tilt>

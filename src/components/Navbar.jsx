@@ -22,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain hover:-rotate-45 rounded-full" />
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain hover:-rotate-45 focus:animate-spin rounded-full" />
           <p className="text-white text-[18p] font-bold cursor-pointer">Matheus Berbet<span className="sm:block hidden"></span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
