@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav
       className= { `${styles.paddingX} w-full flex justify-between items-center fixed py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link 
           to="/" 
           className = "flex items-center gap-2"
@@ -23,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain hover:-rotate-45 focus:animate-spin rounded-full" />
-          <p className="text-white text-[18p] font-bold cursor-pointer">Matheus Berbet<span className="sm:block hidden"></span></p>
+          <p className="text-white-100 text-[23px] font-bold cursor-pointer">Matheus Berbet<span className="sm:block hidden"></span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (
@@ -31,10 +31,10 @@ const Navbar = () => {
               key={Link.id}
               className={`
               ${ active === Link.title 
-                ? "text-white" 
-                : "text-secondary"
+                ? "text-secondary" 
+                : "text-white-100" 
               }
-              hover:text-white text-[18px] 
+              hover:text-secondary text-[18px] 
               font-medium cursor-pointer 
               transition duration-300 ease-in-out`}
               onClick={() => setActive(Link.title)}
@@ -63,8 +63,9 @@ const Navbar = () => {
                   key={Link.id}
                   className={`
                   ${ active === Link.title 
-                    ? "text-white" 
-                    : "text-secondary"
+                    ? "text-secondary" 
+                    : "text-white-100" 
+                  
                   }
                   font-poppins font-medium 
                   cursor-pointer text-[16px]`}

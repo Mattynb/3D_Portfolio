@@ -2,9 +2,9 @@ import React from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
-import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { Tech } from '../components';
 
 const ServiceCard = ({ title, description, icon, index }) => {
   return (
@@ -16,10 +16,7 @@ const ServiceCard = ({ title, description, icon, index }) => {
             className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
             options={{max: 45, scale: 1, speed: 450}}>
               
-            <img src={icon} alt={title} className='w-16 h-16 object-contain'/>
-            <h3 className='text-white text-[20px] font-bolt text-center'>
-              {title}
-            </h3>
+            <Tech/>
 
           </div>
         </motion.div>
@@ -36,17 +33,14 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        className="mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]"
+        className="mt-4 text-white-100 text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        Something about myself
+        I am a dedicated Computer Science student with a passion for software development, engineering, and research. Experienced in a variety of programming languages and tools, with a proven track record of independently designing and implementing projects. Bellow you will see some technologies I am familiar with.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))} 
-
+        <Tech/>
       </div>
     </>
   )

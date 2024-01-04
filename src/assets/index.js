@@ -39,8 +39,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import pac_site from "./pac_website.png";
 import plant_site from "./plant_website.png";
+import ampli_oop from "./ampli_oop.png";
 
 export {
+  ampli_oop,
   pac_site,
   plant_site,
   flask,

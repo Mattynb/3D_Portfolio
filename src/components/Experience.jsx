@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
+import { AmpliCanvas } from '../components/canvas';
 
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -11,7 +12,7 @@ import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement 
-    contentStyle={{ background: '#1d1836', color:'#fff'}} 
+    contentStyle={{ background: '#0b4216', color:'#ffffff'}} 
     contentArrowStyle={{ borderRight: '7px solid #232631'}}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
@@ -27,11 +28,11 @@ const ExperienceCard = ({ experience }) => (
   >
     <div>
      
-      <h3 className='text-white text-[24px] font-bold'>
+      <h3 className='text-white-100 text-[24px] font-bold'>
         {experience.title}
       </h3>
       <a href={experience.url} target='_blank' rel='noreferrer'>
-        <p className='text-secondary text-[16px] font-semibold hover:text-sky-700 transition duration-350 ease-in-out' style={{ margin: 0}}>
+        <p className='text-sky-600 italic text-[16px] font-semibold hover:text-sky-400 transition duration-350 ease-in-out' style={{ margin: 0}}>
           {experience.company_name}
         </p>
       </a>
@@ -47,6 +48,12 @@ const ExperienceCard = ({ experience }) => (
         </li>
       ))}
     </ul>
+    {experience.title =="Research Assistant - Computer Vision" ? 
+      <div className='mt-4 mb-4 rounded-2xl bg-gradient-to-t from-primary to-35% to-[#0b4216]'>
+        <p className='py-4 px-4 text-[#807061]'> Ampli Block</p>
+        <AmpliCanvas/>
+      </div>
+     : null }
   </VerticalTimelineElement>
 )
 

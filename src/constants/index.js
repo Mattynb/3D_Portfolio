@@ -1,3 +1,4 @@
+
 import {
     mobile,
     backend,
@@ -33,7 +34,9 @@ import {
     flask,
     pac_site,
     plant_site,
+    ampli_oop,
   } from "../assets";
+  
   
   export const navLinks = [
     {
@@ -119,11 +122,6 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "Jupyter",
-      icon: jupyter,
-    },
-
   ];
   
   const experiences = [
@@ -158,81 +156,66 @@ import {
         "Presented about my progress on multiple occasions during lab meetings and to the CS department.",
       ],
     },
-    {
-      title: "Wix Developer",
-      company_name: "Plan Ahead Constructions",
-      icon: pac,
-      iconBg: "#0e3b77",
-      date: "December 2023",
-      url: "https://www.planaheadconstructions.com/",
-      points: [
-        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement.",
-        "My focus on SEO strategies led to a 1,967% increase in traffic.",
-        "My ongoing responsibilities include website maintenance, monitoring analytics, and implementing user feedback for continuous improvement.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
   ];
   
   const projects = [
     {
       name: "Plan Ahead Constructions", 
       description:
-        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement. My focus on SEO strategies led to a 1,967% increase in traffic. My ongoing responsibilities include website maintenance, monitoring analytics, and implementing user feedback for continuous improvement.",
+        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement. My focus on SEO strategies led to a 1,967% increase in traffic. My ongoing responsibilities include website maintenance, monitoring analytics.",
       tags: [
         {
           name: "Wix Website Builder",
           color: "blue-text-gradient",
         },
         {
-          name: "User Interface Design",
-          icon: mongodb,
-          color: "gray-text-gradient",
+          name: "UI Design",
+          color: "green-text-gradient",
         },
         {
-          name: "Search Engine Optimization (SEO)",
-          icon: tailwind,
+          name: "SEO",
           color: "pink-text-gradient",
         },
       ],
       image: pac_site,
-      source_code_link: "https://github.com/Mattynb",
+      source_code_link: "",
       live_code_link: "https://planaheadconstructions.com/",
+    },
+    {
+      name: "Ampli Recognition",
+      description:
+        "OOP program to identify Ampli system and analyze it, predicting strand of virus in sample. This tool assists Prof. Hamad and Ph.D. candidate Josselyn Mata in their research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19.",
+      tags: [
+        {
+          name: "Research",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Computer Vision",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "GitHub",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "3D Printing",
+          color: "blue-text-gradient",
+        },
+        
+      ],
+      image: ampli_oop,
+      source_code_link: "https://github.com/Mattynb/PhaseA_CV_NanoBioLab",
+      live_code_link: "",
     },
     {
       name: "Plant Recognition",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 70% of cases, we offer the right answer.",
       tags: [
         {
           name: "Flask",
-          color: "black-text-gradient",
+          color: "pink-text-gradient",
         },
         {
           name: "Tensorflow",
@@ -240,12 +223,13 @@ import {
         },
         {
           name: "Jupyter",
-          color: "#[161616]-text-gradient",
+          color: "blue-text-gradient",
         },
       ],
       image: plant_site,
       source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
-    },
+      live_code_link: "",
+    },    
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

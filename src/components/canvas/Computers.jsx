@@ -6,7 +6,7 @@ import CanvasLoader from '../Loader';
 
 
 const Computers = (isMobile) => {
-  const computer = useGLTF('./desktop_pc/ampli_block.glb');
+  const computer = useGLTF('./desktop_pc/scene.gltf');
   
   return (
     <mesh>
@@ -56,7 +56,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameLoop = 'demand'
+      frameloop = 'demand'
       shadows
       camera={{position: [20, 3, 5], fov: 25}}
       gl = {{ preserveDrawingBuffer: true }}

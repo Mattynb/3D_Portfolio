@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { EarthCanvas } from "./canvas";
 
 // service_qrqh2cu
 // template_waudc14
@@ -65,10 +65,10 @@ const Contact = () => {
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] background-motion bg-hero-pattern bg-cover p-8 rounded-3xl'
       >
         <p  className={styles.sectionSubText}>Get in Touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <h3 className={`${styles.sectionHeadText} text-[#0b4216]`}>Contact</h3>
       
         <form
           ref={formRef}
@@ -76,19 +76,20 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-secondary font-medium mb-4'>
               Your Name
             </span>
             <input
               type='text'
               name='name'
+              autoComplete='name'
               value={form.name}
               onChange={handleChange}
-              className='bg-tertiary py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
+              className='bg-white-100 py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-secondary font-medium mb-4 '>
               Your Email
             </span>
             <input
@@ -96,24 +97,25 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              className='bg-tertiary py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
+              autoComplete='email'
+              className='bg-white-100 py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-secondary font-medium mb-4'>
               Your Message
             </span>
             <textarea
               name='message'
               value={form.message}
               onChange={handleChange}
-              className='bg-tertiary py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
+              className='bg-white-100 py-4 px-6 placeholder-secondary rounded-lg outlined-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none font-bold w-fit text-white shadow-md shadow-primary rounded-xl'
+            className=' py-3 px-8 outline-none font-bold w-fit text-white-100 shadow-xl shadow-primary rounded-full bg-gradient-to-r from-[#0b4216] to-secondary hover:from-tertiary hover:to-secondary transition duration-350 ease-in-out text-'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
@@ -121,11 +123,12 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>
+
     
     </div>
   )

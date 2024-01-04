@@ -1,24 +1,78 @@
 import { BrowserRouter } from 'react-router-dom'
-import {About, Contact, Experience, Feedbacks , Hero, Navbar, StarsCanvas, Tech, Works} from './components'
+import {About, Contact, Experience , Hero, Navbar, StarsCanvas, Works} from './components'
+import { useState, useEffect } from 'react';
+
+const MainContent = () => {
+
+  return ( 
+    <div className={`relative z-0 bg-primary transition-opacity duration-1000 `}>
+      <div className= "background-motion bg-hero-pattern bg-blur-md bg-cover bg-center">
+        <Navbar />
+        <Hero />
+      </div>
+      
+        <About />
+        <Experience />
+      
+      <Works />
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
+      </div>
+    </div>
+  )
+}
+
+const GreetingMessage = ({ onContinue }) => {
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const handleContinue = () => {
+    setFadeOut(true);
+    setTimeout(onContinue, 500); // Corresponds to the duration of the fade-out effect
+  };
+
+  const fadeOutClass = fadeOut ? 'opacity-0' : 'opacity-100';
+
+  return (
+    <div className={`fixed background-motion bg-cover top-0 left-0 right-0 bottom-0 bg-hero-pattern flex flex-col justify-center items-center z-50 transition-opacity duration-1000 ${fadeOutClass}`}>
+      <div className='rounded-full w-auto h-auto bg-white backdrop-blur-sm bg-opacity-10 p-10 mb-10'>
+        <h1 className=" text-primary font-bold text-xl mb-10 text-center max-w">
+          When I consider your heavens,<br/>
+          the work of your fingers,<br/>
+          which you have set in place,<br/>
+          what is mankind that you are mindful of them,<br/>
+          human beings that you care for them?<br/>
+          Lord, our Lord,
+          how majestic is your name in all the earth!<br/>
+          -Psalms 8
+        </h1>
+        <h1 className="text-primary font-bold text-xl mb-10 text-center max-w ">
+          For God so loved the world <br/> that he gave his one and only Son,<br/> 
+          that whoever believes in him<br/>  shall not perish but have eternal life.<br/>
+          -John 3:16
+        </h1>
+      </div>
+      <button onClick={handleContinue} className="px-6 py-3 bg-primary text-white rounded-md hover:bg-secondary transition duration-300 ease-in-out focus:outline-none">
+        View Portfolio
+      </button>
+    </div>
+  )
+}
 
 const App = () => {
+
+  const [showGreeting, setShowGreeting] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowGreeting(false), 50000); // Hide after 5 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className= "bg-hero-pattern bg-gradient-to-r bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <div className="relative z-0">
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-          
-        
-          <Contact />
-          <StarsCanvas />
-        </div>
+      <div>
+        {showGreeting ? <GreetingMessage onContinue={() => setShowGreeting(false)} /> : <MainContent />}
       </div>
     </BrowserRouter>
   )
