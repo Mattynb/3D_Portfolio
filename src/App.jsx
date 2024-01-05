@@ -34,7 +34,7 @@ const GreetingMessage = ({ onContinue }) => {
   const fadeOutClass = fadeOut ? 'opacity-0' : 'opacity-100';
 
   return (
-    <div className={`h-full w-full background-motion bg-cover bg-hero-pattern flex flex-col justify-center items-center transition-opacity duration-1000 ${fadeOutClass}`}>
+    <div className={`h-screen w-full background-motion  bg-hero-pattern flex flex-col justify-center items-center transition-opacity duration-1000 ${fadeOutClass}`}>
       <div className='rounded-full w-auto h-auto bg-white backdrop-blur-sm bg-opacity-10 p-10 mb-10 flex flex-col justify-center items-center'>
         <h1 className=" text-primary font-bold text-xl mb-10 text-center max-w">
           When I consider your heavens,<br/>
@@ -65,7 +65,7 @@ const App = () => {
   const [showGreeting, setShowGreeting] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowGreeting(false), 5000); // Hide after 5 seconds
+    const timer = setTimeout(() => setShowGreeting(false), 50000); // Hide after 5 seconds
     return () => clearTimeout(timer);
   }, []);
 

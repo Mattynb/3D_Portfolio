@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] absolute inset-0 top-[358px] absolute inset-0 top-[120px] max-w-7xl'
+        className='xl:flex-1 xl:h-auto md:h-bottom-10 h-auto absolute inset-0 top-[358px]'
       >
         <PortraitCanvas/>
       </motion.div>
