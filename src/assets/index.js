@@ -41,8 +41,10 @@ import pac_site from "./pac_website.png";
 import plant_site from "./plant_website.png";
 import ampli_oop from "./ampli_oop.png";
 import ampli_block from "./ampli_block.png";
+import portrait_png from "./portrait.png";
 
 export {
+  portrait_png,
   ampli_block,
   ampli_oop,
   pac_site,

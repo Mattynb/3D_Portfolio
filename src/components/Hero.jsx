@@ -1,10 +1,8 @@
 import React from 'react'
-import {motion} from 'framer-motion';
-import { slideIn } from '../utils/motion';
-
 import {styles} from '../styles'
 
 import { PortraitCanvas } from './canvas';
+import { portrait_png } from '../assets';
 
 const Hero = () => {
   return (
@@ -27,10 +25,13 @@ const Hero = () => {
       </div>
   
       <div
-        className='xl:flex-1 xl:h-auto md:h-bottom-10 h-auto absolute inset-0 top-[358px]'
+        className='xl:flex-1 xl:h-auto md:h-bottom-10 h-auto absolute inset-0 top-[358px] hidden sm:block'
       >
         <PortraitCanvas/>
       </div>
+      <div className='sm:hidden absolute inset-x-0 bottom-0 right-0 '>
+          <img src={portrait_png}/>
+      </div> 
 
     </section>
   )
