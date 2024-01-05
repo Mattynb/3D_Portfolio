@@ -1,14 +1,14 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
-import { AmpliCanvas } from '../components/canvas';
-
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+
+import { ampli_block } from '../assets';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement 
@@ -49,9 +49,9 @@ const ExperienceCard = ({ experience }) => (
       ))}
     </ul>
     {experience.title =="Research Assistant - Computer Vision" ? 
-      <div className='mt-4 mb-4 rounded-2xl bg-gradient-to-t from-primary to-35% to-[#0b4216]'>
+      <div className='mt-4 mb-4 rounded-2xl bg-gradient-to-t from-primary to-35% to-[#0b4216] flex flex-col justify-center items-center'>
         <p className='py-4 px-4 text-[#807061]'> Ampli Block</p>
-        <AmpliCanvas/>
+        <img src={ampli_block} alt="ampli block"/>
       </div>
      : null }
   </VerticalTimelineElement>

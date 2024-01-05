@@ -4,13 +4,12 @@ import {
   Decal, Float, OrbitControls, Preload, useTexture
 } from '@react-three/drei'
 import CanvasLoader from '../Loader';
-import { tripguide } from '../../assets';
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={2.75} rotationIntensity={1} floatIntensity={5}>
+    <Float speed={1} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -37,7 +36,7 @@ const BallCanvas = ({ icon, name }) => {
   return (
     <div className='w-full h-full transition duration-500 ease-in-out' onMouseEnter={() => setToggle(true)} onMouseLeave={() => setToggle(false)}>
       <Canvas
-        frameLoop = 'demand'
+        frameloop = 'always'
         gl = {{ preserveDrawingBuffer: true }}> 
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls enableZoom={false}/>

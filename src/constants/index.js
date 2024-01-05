@@ -147,7 +147,7 @@ import {
       icon: umb,
       iconBg: "#E6DEDD",
       url:"https://blogs.umb.edu/kimhamad/", 
-      date: "September 2023 - December 2023",
+      date: "September 2023 - Present",
       points: [
         "Assisted Prof. Hamad and Ph.D. candidate Josselyn Mata in her research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19 (Ampli).",
         "Developed OOP program to identify Ampli system and analyze it, predicting strand of virus in sample (Computer Vision).",
