@@ -1,11 +1,13 @@
 import React from 'react';
-import { Tilt } from 'react-tilt';
+//import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
 import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { Tech } from '../components';
 
+
+/*
 const ServiceCard = ({ title, description, icon, index }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -23,6 +25,7 @@ const ServiceCard = ({ title, description, icon, index }) => {
     </Tilt>
   )
 }
+*/
 
 const About = () => {
   return (

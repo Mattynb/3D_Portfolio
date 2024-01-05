@@ -12,7 +12,7 @@ import { ampli_block } from '../assets';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement 
-    contentStyle={{ background: '#0b4216', color:'#ffffff'}} 
+    contentStyle={{ background: '#0b4216', color:'#fff'}} 
     contentArrowStyle={{ borderRight: '7px solid #232631'}}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}

@@ -6,8 +6,8 @@ const MainContent = () => {
 
   return ( 
     <div className={`relative z-0 bg-primary transition-opacity duration-1000 `}>
-      <div className= "background-motion bg-hero-pattern bg-blur-md bg-cover bg-center">
-        <Navbar />
+      <Navbar />
+      <div className= "bg-hero-pattern bg-cover">
         <Hero />
       </div>
       

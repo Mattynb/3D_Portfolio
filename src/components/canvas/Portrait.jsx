@@ -11,8 +11,6 @@ const Portrait = () => {
     <mesh>
         <hemisphereLight intensity={1.4} 
         groundColor="white" />
-    
-        <pointLight intensity={1} />
             <primitive
             object={portrait.scene}
             scale={8}
@@ -36,20 +34,17 @@ const PortraitCanvas = () => {
         far: 200,
         position: [-4, 3, 6],
       }}
-      className='w-full h-full'
     >
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls 
           autoRotate={false}
-          autoRotateSpeed={0.5}
+          //autoRotateSpeed={0.5}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
         <Portrait />
       </Suspense>
-
-      <Preload all/>
     </Canvas>
   )
 }

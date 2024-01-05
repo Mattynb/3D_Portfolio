@@ -10,6 +10,7 @@ const Stars = (props) => {
   const ref=useRef();
 
   const sphere = random.inSphere(new Float32Array(5000), {radius: 1.2});
+  const filterSphere = sphere.filter(value => !isNaN(value));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta/10;
@@ -21,7 +22,7 @@ const Stars = (props) => {
     <group rotation={[0,0, Math.PI / 4]}>
       <Points 
         ref={ref} 
-        positions={sphere}
+        positions={filterSphere}
         stride={3}
         frustumCulled {...props}
       >

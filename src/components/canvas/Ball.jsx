@@ -36,7 +36,7 @@ const BallCanvas = ({ icon, name }) => {
   return (
     <div className='w-full h-full transition duration-500 ease-in-out' onMouseEnter={() => setToggle(true)} onMouseLeave={() => setToggle(false)}>
       <Canvas
-        frameloop = 'always'
+        frameloop = 'demand'
         gl = {{ preserveDrawingBuffer: true }}> 
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls enableZoom={false}/>
