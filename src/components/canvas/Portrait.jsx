@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Portrait = () => {
-  const portrait = useGLTF('./public/portrait.glb');
+  const portrait = useGLTF('../portrait.glb');
 
   return (
     <mesh>
