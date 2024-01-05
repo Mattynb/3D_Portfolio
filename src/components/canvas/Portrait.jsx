@@ -7,17 +7,15 @@ import CanvasLoader from '../Loader';
 const Portrait = () => {
   const portrait = useGLTF('../portrait.glb');
 
+
   return (
     <mesh>
-        <hemisphereLight intensity={1.4} 
-        groundColor="white" />
-            <primitive
+        <ambientLight intensity={1}/>
+          <primitive
             object={portrait.scene}
             scale={8}
             position-y={-3}
-            rotation-y={0}
-            position-x={0}
-            />
+          />
     </mesh>
   )
 }
@@ -25,13 +23,12 @@ const Portrait = () => {
 const PortraitCanvas = () => {
   return (
     <Canvas
-      shadows
       frameloop='demand'
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ antialias:true, preserveDrawingBuffer: false }}
       camera={{
         fov: 45,
         near: 0.1,
-        far: 200,
+        far: 100,
         position: [-4, 3, 6],
       }}
     >
