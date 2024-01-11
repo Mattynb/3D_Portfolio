@@ -39,7 +39,9 @@ const About = () => {
         className="mt-4 text-white-100 text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am a dedicated Computer Science student with a passion for software development, engineering, and research. Experienced in a variety of programming languages and tools, with a proven track record of independently designing and implementing projects. Bellow you will see some technologies I am familiar with.
+        I am a dedicated Computer Science student with a passion for software development, engineering, and research. 
+        Experienced in a variety of programming languages and tools, with a proven track record of independently designing and implementing projects. 
+        Bellow you will see some technologies I am familiar with. Click to reveal their names.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>
