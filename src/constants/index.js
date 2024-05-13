@@ -234,7 +234,7 @@ import {
     {
       name: "Soccer Dash Game",
       description:
-        "Web based endless runner game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores.",
+        "Web based endless runner (Similar to Subway Surfers) game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores as you play. Still needs a lot of work but it was a fun project",
       tags: [
         {
           name: "C#",
