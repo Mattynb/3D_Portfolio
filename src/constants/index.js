@@ -35,6 +35,7 @@ import {
     pac_site,
     plant_site,
     ampli_oop,
+    soccer_dash_game,
   } from "../assets";
   
   
@@ -229,6 +230,28 @@ import {
       image: plant_site,
       source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
       live_code_link: "",
+    },
+    {
+      name: "Soccer Dash Game",
+      description:
+        "Web based endless runner game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores.",
+      tags: [
+        {
+          name: "C#",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Unity",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Asset Forge",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: soccer_dash_game,
+      source_code_link: "https://github.com/Mattynb/SoccerDashGame",
+      live_code_link: "https://soccer-dash-game-aexnccs2s-matheus9.vercel.app/",
     },    
   ];
   

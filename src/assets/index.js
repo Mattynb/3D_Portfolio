@@ -42,8 +42,10 @@ import plant_site from "./plant_website.png";
 import ampli_oop from "./ampli_oop.png";
 import ampli_block from "./ampli_block.png";
 import portrait_png from "./profile.png";
+import soccer_dash_game from "./SoccerDash.png";
 
 export {
+  soccer_dash_game,
   portrait_png,
   ampli_block,
   ampli_oop,
