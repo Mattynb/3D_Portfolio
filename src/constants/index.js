@@ -251,7 +251,7 @@ import {
       ],
       image: soccer_dash_game,
       source_code_link: "https://github.com/Mattynb/SoccerDashGame",
-      live_code_link: "https://soccer-dash-game-aexnccs2s-matheus9.vercel.app/",
+      live_code_link: "https://soccer-dash-game.vercel.app/",
     },    
   ];
   
