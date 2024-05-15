@@ -183,7 +183,7 @@ import {
       live_code_link: "https://planaheadconstructions.com/",
     },
     {
-      name: "Ampli Recognition",
+      name: "AmpliVision",
       description:
         "OOP program to identify Ampli system and analyze it, predicting strand of virus in sample. This tool assists Prof. Hamad and Ph.D. candidate Josselyn Mata in their research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19.",
       tags: [
@@ -232,7 +232,7 @@ import {
       live_code_link: "",
     },
     {
-      name: "Soccer Dash Game",
+      name: "Soccer Dash",
       description:
         "Web based endless runner (Similar to Subway Surfers) game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores as you play. Still needs a lot of work but it was a fun project",
       tags: [
