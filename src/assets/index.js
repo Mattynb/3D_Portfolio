@@ -25,6 +25,8 @@ import opencv from "./tech/opencv.png";
 import python from "./tech/python.png";
 import tensorflow from "./tech/tensorflow.png";
 import flask from "./tech/flask.png";
+import fastapi from "./tech/fastapi.png";
+import scikit_learn from "./tech/scikit_learn.png";
 
 import mgh from "./company/mgh.png";
 import meta from "./company/meta.png";
@@ -43,6 +45,8 @@ import ampli_oop from "./ampli_oop.png";
 import ampli_block from "./ampli_block.png";
 import portrait_png from "./profile.png";
 import soccer_dash_game from "./SoccerDash.png";
+import pac_kb from "./pac-kb.png";
+import find_worker from "./find_worker.png";
 
 export {
   soccer_dash_game,
@@ -87,4 +91,8 @@ export {
   tripguide,
   umb,
   pac,
+  fastapi,
+  pac_kb,
+  find_worker,
+  scikit_learn
 };

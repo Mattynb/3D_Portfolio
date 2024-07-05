@@ -34,7 +34,7 @@ const GreetingMessage = ({ onContinue }) => {
   const fadeOutClass = fadeOut ? 'opacity-0' : 'opacity-100';
 
   return (
-    <div className={`h-screen w-full background-motion  bg-hero-pattern flex flex-col justify-center items-center transition-opacity duration-1000 ${fadeOutClass}`}>
+    <div className={`h-screen w-screen bg-hero-pattern bg-cover flex flex-col justify-center items-center `}>
       <div className='rounded-full w-auto h-auto bg-white backdrop-blur-sm bg-opacity-10 p-10 mb-10 flex flex-col justify-center items-center'>
         <h1 className=" text-primary font-bold text-xl mb-10 text-center max-w">
           When I consider your heavens,<br/>
@@ -46,7 +46,7 @@ const GreetingMessage = ({ onContinue }) => {
           how majestic is your name in all the earth!<br/>
           -Psalms 8
         </h1>
-        <button onClick={handleContinue} className="ml-5 px-6 py-3 bg-primary text-white mb-10 rounded-md hover:bg-secondary transition duration-300 ease-in-out focus:outline-none">
+        <button onClick={handleContinue} className="animate-pulse ml-5 px-6 py-3 bg-primary text-white mb-10 rounded-md hover:bg-secondary transition duration-300 ease-in-out focus:outline-none">
         View Portfolio
         </button>
         <h1 className="text-primary font-bold text-xl mb-10 text-center max-w ">

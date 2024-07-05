@@ -36,6 +36,10 @@ import {
     plant_site,
     ampli_oop,
     soccer_dash_game,
+    fastapi,
+    pac_kb,
+    find_worker,
+    scikit_learn,
   } from "../assets";
   
   
@@ -80,32 +84,40 @@ import {
       icon: python,
     },
     {
-      name: "Tensorflow",
-      icon: tensorflow,
+      name: "JavaScript",
+      icon: javascript,
     },
     {
-      name: "OpenCV",
-      icon: opencv,
+      name: "FastAPI",
+      icon: fastapi,
     },
     {
       name: "Flask",
       icon: flask,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "OpenCV",
+      icon: opencv,
+    },
+    {
+      name: "Scikit-learn",
+      icon: scikit_learn,
+    },
+    {
+      name: "Tensorflow",
+      icon: tensorflow,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "HTML 5",
@@ -118,6 +130,10 @@ import {
     {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "Docker",
+      icon: docker,
     },
     {
       name: "git",
@@ -134,32 +150,78 @@ import {
       url: "https://www.nmr.mgh.harvard.edu/Neural_Systems_Group/index.html",
       date: "April 2021 - April 2022",
       points: [
-        "Assisted Prof. Quan and P.h.D graduate G. Zhu in their research of unobtrusive continuous blood pressure monitoring devices.",
-        "Provided software & hardware support for a multi-million dollar NIH funded research, becoming familiar with research flow." ,
-        "Produced prototypes for printed-circuit boards using a CNC, demonstrating rapid PCB prototyping. (Arduino, ESP8266).",
-        "Collaboratively reverse engineered an international medical pump module without a manual, utilizing UART for control.",
-        "Analyzed biosensor experimental data with Python libraries, enabling data-driven insights and results. (OpenCv, GUI).",
-        "Programmed controller for biosensor calibration platform in C, making it able to collect accurate data automatically.",
+        "Spearheaded software & hardware support for multi-million dollar NIH funded research, aiding workflows of 3 papers.",
+        "Collaboratively reverse engineered an international medical pump module via UART, saving thousands of dollars in funds.",
+        "Programmed a C-based controller for a biosensor calibration platform, automatically calibrating protocols under 60s.",
+        "Designed a GUI to collect visual data in monitor with OpenCV and save to excel, enabling live data collection up to 60 fps.",  
       ],
     },
     {
       title: "Research Assistant - Computer Vision",
-      company_name: "The Nano-Bio Interfaces Lab at Umass Boston",
+      company_name: "Sloan Foundation @ UMass Boston",
       icon: umb,
       iconBg: "#E6DEDD",
       url:"https://blogs.umb.edu/kimhamad/", 
-      date: "September 2023 - Present",
+      date: "September 2023 - May 2023",
       points: [
-        "Assisted Prof. Hamad and Ph.D. candidate Josselyn Mata in her research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19 (Ampli).",
-        "Developed OOP program to identify Ampli system and analyze it, predicting strand of virus in sample (Computer Vision).",
-        "Constructed Ampli blocks using 3D modeling and laser cutting (TinkerCad, Fusion360, Inkscape, PrusaSlicer).",
-        "Completed a 6-week long summer leadership academy focused on preparing students for professional success. ",
-        "Presented about my progress on multiple occasions during lab meetings and to the CS department.",
+        "Architected a computer vision program to extract rapid test results, streamlining diagnostics in 2500+ lines of code.",
+        "Implemented image scanning feature using OpenCV, isolating the rapid test system from images with 100% accuracy.",
+        "Built OOP feature to automatically create a virtual representation of the image, breaking the problem down into 3 classes.",
+        "Integrated the program with a MongoDB database, enabling recognition of test components with 100% accuracy."
+      ],
+    },
+    {
+      title: "Bioinformatics Research Trainee - Machine Learning",
+      company_name: "Dana Farber @ UMass Boston",
+      icon: umb,
+      iconBg: "#E6DEDD",
+      url:"https://umb-dfhcc.org/",  
+      date: "September 2023 - May 2023",
+      points: [
+        "By the end of my experience I will have:",
+        "Architected a machine learning program to analyze rapid test results and classify which of the 53 viruses is likely present.",
+        "Deployed this program as an user friendly web app.",
+        "Identified the unique normal RGB distribution displayed across multiple tests, or \"fingerprint\" of each virus.",
+        "Generated new data by randomly selecting points within each fingerprint, multiplying dataset 100x for each disease.",
+        "Used this dataset to train 10 different Sci-kit-Learn ML models from LDA to Neural Networks and compared each accuracy.",
       ],
     },
   ];
   
   const projects = [
+    {
+      name: "PAC Kitchen & Bath", 
+      description:
+        "Lead a team of 7 students in weekly SCRUM, providing Figma design. Constructed CI/CD using github actions, AWS EC2, and docker. Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), which included security features like rate-limiting, auth, and COORS. Performed QA (React, CSS).",
+        /*
+        Lead a team of 7 students by coordinating weekly SCRUM, providing Figma design.
+        Constructed CI/CD using github actions, AWS EC2, and docker. 
+        Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), 
+        which included security features like rate-limiting, auth, and COORS.
+        Performed QA of mantainability and clean code. (React, Js, CSS).
+        */
+      tags: [
+        {
+          name: "Team Lead",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Web Dev",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "DevOps",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MERN",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: pac_kb,
+      source_code_link: "",
+      live_code_link: "https://pac-kb.com/",
+    },
     {
       name: "Plan Ahead Constructions", 
       description:
@@ -252,7 +314,39 @@ import {
       image: soccer_dash_game,
       source_code_link: "https://github.com/Mattynb/SoccerDashGame",
       live_code_link: "https://soccer-dash-game.vercel.app/",
-    },    
+    },
+    {
+      name: "Find Worker",
+      description:
+        "This game is meant to be used as a social experiment about how licences positivelly affect applicants in the hiring process. This concept is based on “Job Market Signaling through Occupational Licensing,” work of Harvard professor Peter Q. Blair. ...See More on GitHub Readme",
+        /*    This game is meant to be used as a social experiment about how licences 
+positivelly affect applicants in the hiring process. This concept is 
+based on “Job Market Signaling through Occupational Licensing,” work of Harvard 
+professor Peter Q. Blair. 
+    In the game you play the role of Job recruiter. First you meet the applicant.
+The only information available is their appearance, ethnicity, age, gender, Experience
+and whether or not they are lincenced. You win points by matching the applicant
+with the appropriate job and lose points otherwise. You lose a LOT of points if 
+it is the innapropriate job AND the applicant is an ex-convict. The only applicants
+who are guaranteed not to be ex-convicts are lincenced applicants. This is implemented
+on purpose in an attempt to access the players's inherit biases. After the game is 
+over or terminated, a stats page pops up revealing trends related to players picks.
+    Keep in mind the game is a rough draft with much left to desire, especially in the
+graphics department.*/
+      tags: [
+        {
+          name: "Research",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Game Dev",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: find_worker,
+      source_code_link: "https://github.com/Mattynb/Find_worker",
+      live_code_link: "",
+    },
   ];
   
   export { services, technologies, experiences, projects };
