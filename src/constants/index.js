@@ -147,7 +147,7 @@ import {
       company_name: "Harvard Medical School and Massachusetts General Hospital",
       icon: mgh,
       iconBg: "#E6DEDD",
-      url: "https://www.nmr.mgh.harvard.edu/Neural_Systems_Group/index.html",
+      url: "https://bme.mgh.harvard.edu/",
       date: "April 2021 - April 2022",
       points: [
         "Spearheaded software & hardware support for multi-million dollar NIH funded research, aiding workflows of 3 papers.",
@@ -274,7 +274,7 @@ import {
     {
       name: "Plant Recognition",
       description:
-        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 70% of cases, we offer the right answer.",
+        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 97% of cases, the right answer is within the top 2-3 highest confidence choices.",
       tags: [
         {
           name: "Flask",
