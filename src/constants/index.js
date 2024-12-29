@@ -198,7 +198,7 @@ import {
       icon: umb,
       iconBg: "#E6DEDD",
       url:"https://blogs.umb.edu/kimhamad/", 
-      date: "September 2023 - May 2023",
+      date: "September 2023 - May 2024",
       points: [
         "Led the development of AmpliVision, a computer vision Python library designed to extract and analyze multiplex rapid test results, significantly streamlining the diagnostic process.", 
         "Created and constructed modular blocks for lateral flow assays (LFA), including custom-designed 3D-printed components to facilitate rapid testing.",
