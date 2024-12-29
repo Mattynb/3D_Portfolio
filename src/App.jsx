@@ -1,12 +1,14 @@
 import { BrowserRouter } from 'react-router-dom'
-import {About, Contact, Experience , Hero, Navbar, StarsCanvas, Works} from './components'
+import { About, Contact, Experience , Hero, Navbar, StarsCanvas, Works } from './components'
 import { useState, useEffect } from 'react';
 
 const MainContent = () => {
 
   return ( 
     <div className={`relative z-0 bg-primary transition-opacity duration-1000 `}>
+      
       <Navbar />
+      
       <div className= "bg-hero-pattern bg-cover">
         <Hero />
       </div>
@@ -15,10 +17,20 @@ const MainContent = () => {
         <Experience />
       
       <Works />
-      <div className="relative z-0">
+      
+      {/*
+        <div className="relative z-0">
         <Contact />
         <StarsCanvas />
+        </div>
+      */}
+
+      {/* credits */}
+      <div className=' bg-primary text-white text-center p-5'> 
+        <h1>Portfolio Inspired by <a className='text-secondary' 
+         href="https://www.youtube.com/watch?v=0fYi8SGA20k">Javascript Mastery</a></h1>
       </div>
+
     </div>
   )
 }

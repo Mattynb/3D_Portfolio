@@ -47,6 +47,7 @@ import portrait_png from "./profile.png";
 import soccer_dash_game from "./SoccerDash.png";
 import pac_kb from "./pac-kb.png";
 import find_worker from "./find_worker.png";
+import cs460_portfolio from "./cs460_portfolio.png";
 
 export {
   soccer_dash_game,
@@ -94,5 +95,6 @@ export {
   fastapi,
   pac_kb,
   find_worker,
-  scikit_learn
+  scikit_learn,
+  cs460_portfolio,
 };

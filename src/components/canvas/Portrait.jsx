@@ -6,8 +6,7 @@ import CanvasLoader from '../Loader';
 
 const Portrait = () => {
   const portrait = useGLTF('../portrait.glb');
-
-
+  
   return (
     <mesh>
         <ambientLight intensity={1}/>

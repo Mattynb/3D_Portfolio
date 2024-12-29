@@ -32,7 +32,6 @@ const Hero = () => {
       <div className='sm:hidden absolute inset-x-0 bottom-0 flex justify-center size-1/2 '>
           <img src={portrait_png} alt='portrait'/>
       </div> 
-
     </section>
   )
 }

@@ -1,4 +1,5 @@
 
+import { m } from "framer-motion";
 import {
     mobile,
     backend,
@@ -40,6 +41,7 @@ import {
     pac_kb,
     find_worker,
     scikit_learn,
+    cs460_portfolio,
   } from "../assets";
   
   
@@ -77,8 +79,7 @@ import {
     },
   ];
   
-  const technologies = [
-
+  const languages = [
     {
       name: "Python",
       icon: python,
@@ -88,21 +89,18 @@ import {
       icon: javascript,
     },
     {
-      name: "FastAPI",
-      icon: fastapi,
+      name: "HTML 5",
+      icon: html,
     },
     {
-      name: "Flask",
-      icon: flask,
+      name: "CSS 3",
+      icon: css,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+    // C 
+    // Java
+  ]
+
+  const tech_ai = [
     {
       name: "OpenCV",
       icon: opencv,
@@ -115,22 +113,49 @@ import {
       name: "Tensorflow",
       icon: tensorflow,
     },
+    // numpy 
+    // jupyter 
+    // conda 
+    // pandas 
+    // hpc
+  ]
+
+  const web_dev = [
+    {
+      name: "FastAPI",
+      icon: fastapi,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
     {
       name: "React JS",
       icon: reactjs,
     },
+    // express
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Node JS",
+      icon: nodejs,
     },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // threejs
+  
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
+    // postman
+   
+    {
+      name: "Flask",
+      icon: flask,
+    },
+    // postgress
+  ]
+
+  const other = [
+    //github
+    //aws
     {
       name: "Docker",
       icon: docker,
@@ -139,7 +164,20 @@ import {
       name: "git",
       icon: git,
     },
-  ];
+    // linux
+    // scrum
+    // selenium (web scraping)
+    // figma
+    // wireshark 
+  ]
+
+
+  const technologies = {
+    "Languages": languages,
+    "Web Dev": web_dev,
+    "AI": tech_ai,
+    "Other": other,
+  };
   
   const experiences = [
     {
@@ -147,13 +185,11 @@ import {
       company_name: "Harvard Medical School and Massachusetts General Hospital",
       icon: mgh,
       iconBg: "#E6DEDD",
-      url: "https://bme.mgh.harvard.edu/",
+      url: "https://bme.mgh.harvard.edu/?page_id=133",
       date: "April 2021 - April 2022",
       points: [
-        "Spearheaded software & hardware support for multi-million dollar NIH funded research, aiding workflows of 3 papers.",
-        "Collaboratively reverse engineered an international medical pump module via UART, saving thousands of dollars in funds.",
-        "Programmed a C-based controller for a biosensor calibration platform, automatically calibrating protocols under 60s.",
-        "Designed a GUI to collect visual data in monitor with OpenCV and save to excel, enabling live data collection up to 60 fps.",  
+        "Provided software & hardware support for multi-million dollar NIH funded research. Support tasks consisted of a series of small projects with tangible impacts. Most notably, uncovered functionality of a medical module via UART, saving thousands of dollars in funds otherwise necessary to acquire a new module. My efforts in this experience culminated in a IEEE MIT URTC virtual presentation as a contributing author.",
+  
       ],
     },
     {
@@ -164,31 +200,79 @@ import {
       url:"https://blogs.umb.edu/kimhamad/", 
       date: "September 2023 - May 2023",
       points: [
-        "Architected a computer vision program to extract rapid test results, streamlining diagnostics in 2500+ lines of code.",
-        "Implemented image scanning feature using OpenCV, isolating the rapid test system from images with 100% accuracy.",
-        "Built OOP feature to automatically create a virtual representation of the image, breaking the problem down into 3 classes.",
-        "Integrated the program with a MongoDB database, enabling recognition of test components with 100% accuracy."
+        "Led the development of AmpliVision, a computer vision Python library designed to extract and analyze multiplex rapid test results, significantly streamlining the diagnostic process.", 
+        "Created and constructed modular blocks for lateral flow assays (LFA), including custom-designed 3D-printed components to facilitate rapid testing.",
+        "Successfully identified colorimetric patterns for different cancer types by determining RGB values from test lines, achieving precise block identification and mapping their spatial configuration.", 
+        "This project enhanced my skills in software engineering, emphasizing clean, maintainable code and feature iteration.", 
+        "Successfully implemented advanced image processing techniques using OpenCV, achieving 100% accuracy in rapid test isolation and automated recognition"
       ],
     },
     {
       title: "Bioinformatics Research Trainee - Machine Learning",
-      company_name: "Dana Farber @ UMass Boston",
+      company_name: "UMass Boston — Dana-Farber/Harvard Cancer Center Partnership",
       icon: umb,
       iconBg: "#E6DEDD",
-      url:"https://umb-dfhcc.org/",  
-      date: "September 2023 - May 2023",
+      url:"https://umb-dfhcc.org/",
+      date: "May 2024 - December 2024",
       points: [
-        "By the end of my experience I will have:",
-        "Architected a machine learning program to analyze rapid test results and classify which of the 53 viruses is likely present.",
-        "Deployed this program as an user friendly web app.",
-        "Identified the unique normal RGB distribution displayed across multiple tests, or \"fingerprint\" of each virus.",
-        "Generated new data by randomly selecting points within each fingerprint, multiplying dataset 100x for each disease.",
-        "Used this dataset to train 10 different Sci-kit-Learn ML models from LDA to Neural Networks and compared each accuracy.",
+        "Developed a rule-based generator for image simulation, capable of creating 28,672 training images, 4,096 validation images, and 1,344 testing images in parallel with a machine learning pipeline. The generator used predefined rules to arrange visual elements, adding 5% noise for robustness.",
+        "Implemented and trained a convolutional neural network (CNN) using the LENET architecture for classifying rapid test results, achieving an average F1 score of 0.9970 on the test set",
+        "Integrated outlier detection using the Python Outlier Detection (PyOD) library, achieving an accuracy of 98% with an F1 score of 90.91.",
+        "Participated in 15 academic reading sessions on oncology research, which provided insights into current cancer disparities and informed my research direction."
       ],
     },
   ];
   
   const projects = [
+    {
+      name: "AmpliVision",
+      description:
+        "AmpliVision is an open source program designed to Automate AMPLI rapid test workflows. It loads and processes AMPLI rapid test images, finds the grid and Ampli blocks in the images, reads the diagnostic result for each Ampli block, generate a synthetic dataset of images, train a CNN classifier with generated images, then run outlier detection.",
+      tags: [
+        {
+          name: "Research",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Computer Vision",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "HPC",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ML",
+          color: "pink-text-gradient",
+        },
+        
+      ],
+      image: ampli_oop,
+      source_code_link: "https://github.com/Mattynb/AmpliVision",
+      live_code_link: "https://amplivision3d.vercel.app/",
+    },
+    {
+      name: "Plant Recognition",
+      description:
+        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 97% of cases, the right answer is within the top 2-3 highest confidence choices.",
+      tags: [
+        {
+          name: "Flask",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Jupyter",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: plant_site,
+      source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
+      live_code_link: "",
+    },
     {
       name: "PAC Kitchen & Bath", 
       description:
@@ -245,53 +329,26 @@ import {
       live_code_link: "https://planaheadconstructions.com/",
     },
     {
-      name: "AmpliVision",
+      name: "Graphics Class Portfolio",
       description:
-        "OOP program to identify Ampli system and analyze it, predicting strand of virus in sample. This tool assists Prof. Hamad and Ph.D. candidate Josselyn Mata in their research of reconfigurable rapid diagnostics for infectious diseases, such as Covid-19.",
+        "All of my CS460 - Graphics class projects. In this class I was able to develop rich and interactive web-based 3D visualizations using Three.js, XTK, and WebGL. I also learned how to create 3D models using Blender and Tinkercad. Since everything runs in the browser, it is all live on GitHub Pages.",
       tags: [
         {
-          name: "Research",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Computer Vision",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "GitHub",
+          name: "Three.js",
           color: "pink-text-gradient",
         },
         {
-          name: "3D Printing",
-          color: "blue-text-gradient",
-        },
-        
-      ],
-      image: ampli_oop,
-      source_code_link: "https://github.com/Mattynb/PhaseA_CV_NanoBioLab",
-      live_code_link: "",
-    },
-    {
-      name: "Plant Recognition",
-      description:
-        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 97% of cases, the right answer is within the top 2-3 highest confidence choices.",
-      tags: [
-        {
-          name: "Flask",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Tensorflow",
+          name: "XTK",
           color: "orange-text-gradient",
         },
         {
-          name: "Jupyter",
+          name: "WebGL",
           color: "blue-text-gradient",
         },
       ],
-      image: plant_site,
-      source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
-      live_code_link: "",
+      image: cs460_portfolio,
+      source_code_link: "https://github.com/Mattynb/CS460student",
+      live_code_link: "https://mattynb.github.io/CS460student/",
     },
     {
       name: "Soccer Dash",
