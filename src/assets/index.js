@@ -19,7 +19,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import jupyter from "./tech/jupyter.png";
 import opencv from "./tech/opencv.png";
 import python from "./tech/python.png";
@@ -27,6 +27,10 @@ import tensorflow from "./tech/tensorflow.png";
 import flask from "./tech/flask.png";
 import fastapi from "./tech/fastapi.png";
 import scikit_learn from "./tech/scikit_learn.png";
+import java from "./tech/java.png";
+import C from "./tech/c.png";
+import numpy from "./tech/numpy.png";
+import slurm from "./tech/slurm.png";
 
 import mgh from "./company/mgh.png";
 import meta from "./company/meta.png";
@@ -36,23 +40,19 @@ import tesla from "./company/tesla.png";
 import umb from "./company/umb.png";
 import pac from "./company/pac.webp";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import pac_site from "./pac_website.png";
 import plant_site from "./plant_website.png";
 import ampli_oop from "./ampli_oop.png";
-import ampli_block from "./ampli_block.png";
 import portrait_png from "./profile.png";
 import soccer_dash_game from "./SoccerDash.png";
 import pac_kb from "./pac-kb.png";
 import find_worker from "./find_worker.png";
 import cs460_portfolio from "./cs460_portfolio.png";
+import RSA from "./RSA.jpg";
 
 export {
   soccer_dash_game,
   portrait_png,
-  ampli_block,
   ampli_oop,
   pac_site,
   plant_site,
@@ -87,9 +87,6 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   umb,
   pac,
   fastapi,
@@ -97,4 +94,9 @@ export {
   find_worker,
   scikit_learn,
   cs460_portfolio,
+  java,
+  C,
+  numpy,
+  slurm,
+  RSA, 
 };

@@ -42,7 +42,7 @@ const About = () => {
         I am a dedicated Computer Science graduate with a passion for software development, engineering, and research. 
         Experienced in a variety of programming languages and tools, with a proven track record of independently designing and implementing projects. 
         <br/><br/>
-        Bellow you will see some technologies I am familiar with losely ranked from left to right. 
+        Bellow you will see some technologies I have used before, loosely ranked from left to right. 
         <br/><br/>
         <b>Hover / Tap to reveal technology names.</b>
       </motion.p>

@@ -11,7 +11,7 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link, 
   
     <motion.div variants={fadeIn('Up', 'spring', index*0.5, 0.75)}>
       <Tilt
-        className='bg-[#0b4216] p-5 rounded-2xl sm:w-[360px] w-full' 
+        className='bg-[#0b4216] p-5 rounded-2xl sm:w-[360px] w-full h-full' 
         options={{
           max: 45,
           scale: 1,
@@ -43,23 +43,23 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link, 
             )}
           </div>
         </div>
-        
-        <div className='mt-5'>
-            <h3 className='text-white font-bold text-[20px]'>{name}</h3>
-            <p className='mt-2 text-[#afafaf] text-[14px]'>{description}</p>
+
+        <div className='mt-5 flex flex-col justify-evenly gap-4'>
+          <h3 className='text-white font-bold text-[20px]'>{name}</h3>
+          <div className='flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p 
+                key={tag.name}
+                className={`text-[14px] ${tag.color}`}
+              >
+                {tag.name}
+              </p>
+            ))}
+          </div>
+          <p className='text-[#afafaf] text-[14px] h-full'>{description}</p>     
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-         
-          {tags.map((tag) => (
-            <p 
-              key={tag.name}
-              className={`text-[14px] ${tag.color}`}
-            >
-              {tag.name}
-            </p>
-          ))}
-        </div>
+        
       </Tilt>
     </motion.div>
  )
@@ -80,8 +80,8 @@ const Works = () => {
           className="mt-3 text-white text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through real-world examples of my work. 
-          Each project is briefly described with a <b>link to code repositories (github icon)</b> and <b>live demos (blue icon)</b> in it. 
-          It reflects my ability to solve complex problems, work with different technologies, and 
+          Each project is briefly described with a <b>link to code repositories (github icon)</b> and <b>live demos (blue icon)</b>. 
+          Each work reflects my ability to solve complex problems, work with different technologies, and 
           manage projects effectively.
         </motion.p>
       </div>

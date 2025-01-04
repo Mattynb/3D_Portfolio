@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-primary`}>
             Hi, I'm <span className="text-secondary">Matheus</span>
           </h1>
-          <p className={`${styles.heroSubText} flex text-primary`}>I am a self motivated Software Developer, Researcher, and Computer Science student. Welcome to my portfolio!</p>
+          <p className={`${styles.heroSubText} flex text-white`}>Welcome to my portfolio!</p>
         </div>
       </div>
   

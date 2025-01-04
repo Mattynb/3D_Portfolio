@@ -1,5 +1,3 @@
-
-import { m } from "framer-motion";
 import {
     mobile,
     backend,
@@ -21,9 +19,6 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     mgh,
     jupyter,
@@ -42,6 +37,13 @@ import {
     find_worker,
     scikit_learn,
     cs460_portfolio,
+    github,
+    C,
+    java,
+    numpy,
+    slurm,
+    RSA,
+
   } from "../assets";
   
   
@@ -92,12 +94,18 @@ import {
       name: "HTML 5",
       icon: html,
     },
+    { 
+      name: "Java",
+      icon: java,
+    }, 
+    {
+      name: "C",
+      icon: C,
+    },
     {
       name: "CSS 3",
       icon: css,
     },
-    // C 
-    // Java
   ]
 
   const tech_ai = [
@@ -114,10 +122,21 @@ import {
       icon: tensorflow,
     },
     // numpy 
-    // jupyter 
-    // conda 
+    {
+      name: "Numpy",
+      icon: numpy,
+    },
+    {
+      name: "jupyter",
+      icon: jupyter,
+    },
     // pandas 
-    // hpc
+    // slurm
+    {
+      name: "Slurm",
+      icon: slurm,
+    }
+
   ]
 
   const web_dev = [
@@ -138,14 +157,15 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    // threejs
-  
+    {
+      name: "three.js",
+      icon: threejs,
+    },
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
     // postman
-   
     {
       name: "Flask",
       icon: flask,
@@ -155,6 +175,10 @@ import {
 
   const other = [
     //github
+    {
+      name: "github",
+      icon: github,
+    },
     //aws
     {
       name: "Docker",
@@ -165,10 +189,15 @@ import {
       icon: git,
     },
     // linux
-    // scrum
     // selenium (web scraping)
+
     // figma
+    {
+      name: "Figma",
+      icon: figma,
+    },
     // wireshark 
+
   ]
 
 
@@ -200,11 +229,7 @@ import {
       url:"https://blogs.umb.edu/kimhamad/", 
       date: "September 2023 - May 2024",
       points: [
-        "Led the development of AmpliVision, a computer vision Python library designed to extract and analyze multiplex rapid test results, significantly streamlining the diagnostic process.", 
-        "Created and constructed modular blocks for lateral flow assays (LFA), including custom-designed 3D-printed components to facilitate rapid testing.",
-        "Successfully identified colorimetric patterns for different cancer types by determining RGB values from test lines, achieving precise block identification and mapping their spatial configuration.", 
-        "This project enhanced my skills in software engineering, emphasizing clean, maintainable code and feature iteration.", 
-        "Successfully implemented advanced image processing techniques using OpenCV, achieving 100% accuracy in rapid test isolation and automated recognition"
+        "Spearheaded the development of AmpliVision, a Python-based computer vision library with custom 3D-printed lateral flow assay components and advanced OpenCV image processing, achieving accurate automated recognition of said components, significantly streamlining the diagnostic process."
       ],
     },
     {
@@ -215,10 +240,7 @@ import {
       url:"https://umb-dfhcc.org/",
       date: "May 2024 - December 2024",
       points: [
-        "Developed a rule-based generator for image simulation, capable of creating 28,672 training images, 4,096 validation images, and 1,344 testing images in parallel with a machine learning pipeline. The generator used predefined rules to arrange visual elements, adding 5% noise for robustness.",
-        "Implemented and trained a convolutional neural network (CNN) using the LENET architecture for classifying rapid test results, achieving an average F1 score of 0.9970 on the test set",
-        "Integrated outlier detection using the Python Outlier Detection (PyOD) library, achieving an accuracy of 98% with an F1 score of 90.91.",
-        "Participated in 15 academic reading sessions on oncology research, which provided insights into current cancer disparities and informed my research direction."
+        "Continued developing AmpliVision by engineering a rule-based image simulation generator producing over 34,000 dataset images with added noise for robustness, implemented and trained a LENET-based CNN achieving a 0.9970 F1 score for rapid test classification, integrated PyOD for outlier detection with 98% accuracy, and engaged in oncology research sessions to inform and enhance the project’s focus on cancer disparities."
       ],
     },
   ];
@@ -252,38 +274,9 @@ import {
       live_code_link: "https://amplivision3d.vercel.app/",
     },
     {
-      name: "Plant Recognition",
+      name: "CS410 - Cabinet Website", 
       description:
-        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get potentially acurate results. We estimate that in 97% of cases, the right answer is within the top 2-3 highest confidence choices.",
-      tags: [
-        {
-          name: "Flask",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Tensorflow",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Jupyter",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: plant_site,
-      source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
-      live_code_link: "",
-    },
-    {
-      name: "PAC Kitchen & Bath", 
-      description:
-        "Lead a team of 7 students in weekly SCRUM, providing Figma design. Constructed CI/CD using github actions, AWS EC2, and docker. Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), which included security features like rate-limiting, auth, and COORS. Performed QA (React, CSS).",
-        /*
-        Lead a team of 7 students by coordinating weekly SCRUM, providing Figma design.
-        Constructed CI/CD using github actions, AWS EC2, and docker. 
-        Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), 
-        which included security features like rate-limiting, auth, and COORS.
-        Performed QA of mantainability and clean code. (React, Js, CSS).
-        */
+        "Lead a team of 7 students in weekly SCRUM, providing Figma design. Constructed CI/CD using github actions, AWS EC2, and docker. Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), which included security features like rate-limiting, auth, and COORS. [AWS Backend is off].",
       tags: [
         {
           name: "Team Lead",
@@ -300,6 +293,72 @@ import {
         {
           name: "MERN",
           color: "blue-text-gradient",
+        },
+      ],
+      image: pac_kb,
+      source_code_link: "https://github.com/Mattynb/Cabinet-Website",
+      live_code_link: "https://project.pac-kb.com/",
+    },
+    {
+      name: "CS460 - Graphics Portfolio",
+      description:
+        "All of my CS460 - Graphics class projects. In this class I was able to develop rich and interactive web-based 3D visualizations using Three.js, XTK, and WebGL. I also learned how to create 3D models using Blender and Tinkercad. Since everything runs in the browser, it is all live on GitHub Pages.",
+      tags: [
+        {
+          name: "Three.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "XTK",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "WebGL",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: cs460_portfolio,
+      source_code_link: "https://github.com/Mattynb/CS460student",
+      live_code_link: "https://mattynb.github.io/CS460student/",
+    },
+    {
+      name: "CS461 - Soccer Dash",
+      description:
+        "Web based endless runner (Similar to Subway Surfers) game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores as you play. Still needs a lot of work but it was a fun project",
+      tags: [
+        {
+          name: "C#",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Unity",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Asset Forge",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: soccer_dash_game,
+      source_code_link: "https://github.com/Mattynb/SoccerDashGame",
+      live_code_link: "https://soccer-dash-game.vercel.app/",
+    },
+    {
+      name: "PAC Kitchen & Bath", 
+      description:
+        "Created an automated multithreading web scraping tool to extract product data from suppliers' websites. Using shopify, I created a custom theme and integrated the data into the website. Streamlining the process of adding new products to the website and ensuring a good costumer experience ",
+      tags: [
+        {
+          name: "Web Scraping",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Shopify",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "UI Design",
+          color: "green-text-gradient",
         },
       ],
       image: pac_kb,
@@ -329,48 +388,26 @@ import {
       live_code_link: "https://planaheadconstructions.com/",
     },
     {
-      name: "Graphics Class Portfolio",
+      name: "RSA Encrypted Chat GUI", 
       description:
-        "All of my CS460 - Graphics class projects. In this class I was able to develop rich and interactive web-based 3D visualizations using Three.js, XTK, and WebGL. I also learned how to create 3D models using Blender and Tinkercad. Since everything runs in the browser, it is all live on GitHub Pages.",
+        "This is a simple chat room server/client app that uses RSA encryption to send messages. The app is built using python and the GUI is built using pySimpleGUI. The app is able to generate public and private keys, encrypt and decrypt messages, and send messages to other users.",
       tags: [
         {
-          name: "Three.js",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "XTK",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "WebGL",
+          name: "Encryption",
           color: "blue-text-gradient",
         },
-      ],
-      image: cs460_portfolio,
-      source_code_link: "https://github.com/Mattynb/CS460student",
-      live_code_link: "https://mattynb.github.io/CS460student/",
-    },
-    {
-      name: "Soccer Dash",
-      description:
-        "Web based endless runner (Similar to Subway Surfers) game where you play as a soccer player. The game is built in unity using C# with some 3D models I created in Asset Forge. Keeps track of high scores as you play. Still needs a lot of work but it was a fun project",
-      tags: [
         {
-          name: "C#",
+          name: "Networking",
+          color: "green-text-gradient",
+        },
+        {
+          name: "GUI",
           color: "pink-text-gradient",
         },
-        {
-          name: "Unity",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Asset Forge",
-          color: "blue-text-gradient",
-        },
       ],
-      image: soccer_dash_game,
-      source_code_link: "https://github.com/Mattynb/SoccerDashGame",
-      live_code_link: "https://soccer-dash-game.vercel.app/",
+      image: RSA,
+      source_code_link: "https://github.com/Mattynb/RSA-Chat-Room-App--python",
+      live_code_link: "",
     },
     {
       name: "Find Worker",
@@ -402,6 +439,28 @@ graphics department.*/
       ],
       image: find_worker,
       source_code_link: "https://github.com/Mattynb/Find_worker",
+      live_code_link: "",
+    },
+    {
+      name: "Plant Recognition",
+      description:
+        "This website can identify more than 1000 plant taxons, including flowers and trees from all over the world. This was possible using a customized convolutional neural network (CNN) to get acurate classification results.",
+      tags: [
+        {
+          name: "Flask",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Jupyter",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: plant_site,
+      source_code_link: "https://github.com/Mattynb/CS_Competition2023_PlantMLweb",
       live_code_link: "",
     },
   ];
