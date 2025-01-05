@@ -43,6 +43,7 @@ import {
     numpy,
     slurm,
     RSA,
+    spyders,
 
   } from "../assets";
   
@@ -386,6 +387,29 @@ import {
       image: pac_site,
       source_code_link: "",
       live_code_link: "https://planaheadconstructions.com/",
+    },
+
+    {
+      name: "INTR-D 280 - Group Blog", 
+      description:
+        "This blog is a space where we can share our group projects for INTR-D 280 / HONORS 295 An Introduction to Genomic Data Sciences. We also happen to be spider-man and python fans.",
+      tags: [
+        {
+          name: "Bioinformatics",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Web Dev",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "R",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: spyders,
+      source_code_link: "https://github.com/Mattynb/INTRD280",
+      live_code_link: "https://mattynb.github.io/INTRD280/",
     },
     {
       name: "RSA Encrypted Chat GUI", 

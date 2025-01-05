@@ -49,6 +49,7 @@ import pac_kb from "./pac-kb.png";
 import find_worker from "./find_worker.png";
 import cs460_portfolio from "./cs460_portfolio.png";
 import RSA from "./RSA.jpg";
+import spyders from "./spyders.png";
 
 export {
   soccer_dash_game,
@@ -99,4 +100,5 @@ export {
   numpy,
   slurm,
   RSA, 
+  spyders,
 };
