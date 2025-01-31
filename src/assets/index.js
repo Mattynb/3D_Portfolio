@@ -39,6 +39,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import umb from "./company/umb.png";
 import pac from "./company/pac.webp";
+import usaf from "./company/USAF_logo.png";
 
 import pac_site from "./pac_website.png";
 import plant_site from "./plant_website.png";
@@ -101,4 +102,5 @@ export {
   slurm,
   RSA, 
   spyders,
+  usaf,
 };

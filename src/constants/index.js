@@ -44,6 +44,7 @@ import {
     slurm,
     RSA,
     spyders,
+    usaf
 
   } from "../assets";
   
@@ -248,6 +249,17 @@ import {
         "Continued developing AmpliVision by engineering a rule-based image simulation generator producing over 34,000 dataset images with added noise for robustness, implemented and trained a LENET-based CNN achieving a 0.9970 F1 score for rapid test classification, integrated PyOD for outlier detection with 98% accuracy, and engaged in oncology research sessions to inform and enhance the project’s focus on cancer disparities."
       ],
     },
+    {
+      title: "E3 - Airman First Class",
+      company_name: "United States Air Force",
+      icon: usaf,
+      iconBg: "#E6DEDD",
+      url:"https://www.airforce.com",
+      date: "Oct 2024 - Present",
+      points: [
+        "TBD"
+      ],
+    },
   ];
   
   const projects = [
@@ -279,31 +291,28 @@ import {
       live_code_link: "https://amplivision3d.vercel.app/",
     },
     {
-      name: "CS410 - Cabinet Website", 
+      name: "PAC Kitchen & Bath", 
       description:
-        "Lead a team of 7 students in weekly SCRUM, providing Figma design. Constructed CI/CD using github actions, AWS EC2, and docker. Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), which included security features like rate-limiting, auth, and COORS. [AWS Backend is off].",
+        "Created an automated multithreading web scraping tool to extract over 24,000 products from suppliers' websites. Using shopify, I created a custom theme and integrated the product data. Streamlining the process of adding new products to the website and ensuring a good costumer experience ",
       tags: [
         {
-          name: "Team Lead",
+          name: "Web Scraping",
           color: "orange-text-gradient",
         },
         {
-          name: "Web Dev",
+          name: "Shopify",
           color: "pink-text-gradient",
         },
         {
-          name: "DevOps",
+          name: "UI Design",
           color: "green-text-gradient",
-        },
-        {
-          name: "MERN",
-          color: "blue-text-gradient",
         },
       ],
       image: pac_kb,
-      source_code_link: "https://github.com/Mattynb/Cabinet-Website",
-      live_code_link: "https://project.pac-kb.com/",
+      source_code_link: "",
+      live_code_link: "https://pac-kb.com/",
     },
+   
     {
       name: "CS460 - Graphics Portfolio",
       description:
@@ -349,16 +358,38 @@ import {
       live_code_link: "https://soccer-dash-game.vercel.app/",
     },
     {
-      name: "PAC Kitchen & Bath", 
+      name: "CS410 - Cabinet Website", 
       description:
-        "Created an automated multithreading web scraping tool to extract product data from suppliers' websites. Using shopify, I created a custom theme and integrated the data into the website. Streamlining the process of adding new products to the website and ensuring a good costumer experience ",
+        "Lead a team of 7 students in weekly SCRUM, providing Figma design. Constructed CI/CD using github actions, AWS EC2, and docker. Built 2 REST APIs for product (FastApi, PSQL) and other data (Node, MongoDB), which included security features like rate-limiting, auth, and COORS. [AWS Backend is off].",
       tags: [
         {
-          name: "Web Scraping",
+          name: "Team Lead",
           color: "orange-text-gradient",
         },
         {
-          name: "Shopify",
+          name: "Web Dev",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "DevOps",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MERN",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: pac_kb,
+      source_code_link: "https://github.com/Mattynb/Cabinet-Website",
+      live_code_link: "https://project.pac-kb.com/",
+    },
+    {
+      name: "Plan Ahead Constructions - v2", 
+      description:
+        "Redesigned the website using HTML, CSS, and Javascript for a more straight forward user experience without hosting fees. My ongoing responsibilities include website maintenance, monitoring analytics.",
+      tags: [
+        {
+          name: "Web Dev",
           color: "pink-text-gradient",
         },
         {
@@ -366,14 +397,14 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: pac_kb,
-      source_code_link: "",
-      live_code_link: "https://pac-kb.com/",
+      image: pac_site,
+      source_code_link: "https://github.com/Mattynb/planaheadconstructions",
+      live_code_link: "https://planaheadconstructions.com/",
     },
     {
-      name: "Plan Ahead Constructions", 
+      name: "Plan Ahead Constructions - v1", 
       description:
-        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement. My focus on SEO strategies led to a 1,967% increase in traffic. My ongoing responsibilities include website maintenance, monitoring analytics.",
+        "Executed a complete design and functional overhaul, enhancing user experience and interface for increased engagement. My focus on SEO strategies led to a 1,967% increase in traffic.",
       tags: [
         {
           name: "Wix Website Builder",
@@ -390,7 +421,7 @@ import {
       ],
       image: pac_site,
       source_code_link: "",
-      live_code_link: "https://planaheadconstructions.com/",
+      live_code_link: "https://nascimentomatheus2.wixsite.com/pac-v1",
     },
 
     {
